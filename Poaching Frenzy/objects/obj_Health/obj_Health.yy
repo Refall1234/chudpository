@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Health",
-    "path":"sprites/Health/Health.yy",
+    "name":"spr_health",
+    "path":"sprites/spr_health/spr_health.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -4,10 +4,10 @@
 /// @DnDArgument : "var" "room"
 room = room;
 
-/// @DnDAction : YoYo Games.Rooms.If_First_Room
+/// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
-/// @DnDHash : 7BE35286
-if(room == room_first)
+/// @DnDHash : 02E4C858
+if(variable)
 {
 
 }
@@ -22,6 +22,14 @@ room_goto(noone);
 /// @DnDHash : 0B55E773
 variable = room;
 
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 5B1A5B80
+if(variable == 0)
+{
+
+}
+
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 14281A0E
@@ -32,6 +40,14 @@ room_goto(noone);
 /// @DnDHash : 47EC7B23
 variable = room;
 
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
+/// @DnDHash : 0E407CC3
+if(variable)
+{
+
+}
+
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 5E63B138
@@ -41,6 +57,14 @@ room_goto(noone);
 /// @DnDVersion : 1
 /// @DnDHash : 703D26B7
 variable = room;
+
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
+/// @DnDHash : 1B64315A
+if(variable)
+{
+
+}
 
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
