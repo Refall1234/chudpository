@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Poaching Frenzy",
   "resources": [
+    {"id":{"name":"obj_next_stage","path":"objects/obj_next_stage/obj_next_stage.yy",},"order":3,},
     {"id":{"name":"fnt_inv","path":"fonts/fnt_inv/fnt_inv.yy",},"order":0,},
     {"id":{"name":"obj_chud","path":"objects/obj_chud/obj_chud.yy",},"order":0,},
     {"id":{"name":"obj_chudhut","path":"objects/obj_chudhut/obj_chudhut.yy",},"order":0,},
@@ -36,6 +37,7 @@
     {"id":{"name":"spr_concrete","path":"sprites/spr_concrete/spr_concrete.yy",},"order":0,},
     {"id":{"name":"spr_desert_fox","path":"sprites/spr_desert_fox/spr_desert_fox.yy",},"order":0,},
     {"id":{"name":"spr_desertRabbit","path":"sprites/spr_desertRabbit/spr_desertRabbit.yy",},"order":0,},
+    {"id":{"name":"r_Dark_Web","path":"rooms/r_Dark_Web/r_Dark_Web.yy",},"order":1,},
     {"id":{"name":"spr_door_nohandle","path":"sprites/spr_door_nohandle/spr_door_nohandle.yy",},"order":0,},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},"order":0,},
     {"id":{"name":"spr_gator","path":"sprites/spr_gator/spr_gator.yy",},"order":0,},
@@ -58,7 +60,6 @@
     {"id":{"name":"spr_Peccary","path":"sprites/spr_Peccary/spr_Peccary.yy",},"order":0,},
     {"id":{"name":"spr_plaster","path":"sprites/spr_plaster/spr_plaster.yy",},"order":0,},
     {"id":{"name":"spr_polarBear","path":"sprites/spr_polarBear/spr_polarBear.yy",},"order":0,},
-    {"id":{"name":"obj_next_stage","path":"objects/obj_next_stage/obj_next_stage.yy",},"order":1,},
     {"id":{"name":"spr_reindeer","path":"sprites/spr_reindeer/spr_reindeer.yy",},"order":0,},
     {"id":{"name":"spr_Scorpion_make_lightbrown","path":"sprites/spr_Scorpion_make_lightbrown/spr_Scorpion_make_lightbrown.yy",},"order":0,},
     {"id":{"name":"spr_Seal","path":"sprites/spr_Seal/spr_Seal.yy",},"order":0,},
@@ -80,7 +81,6 @@
     {"id":{"name":"ts_metal","path":"tilesets/ts_metal/ts_metal.yy",},"order":0,},
     {"id":{"name":"ts_plaster","path":"tilesets/ts_plaster/ts_plaster.yy",},"order":0,},
     {"id":{"name":"ts_stone","path":"tilesets/ts_stone/ts_stone.yy",},"order":0,},
-    {"id":{"name":"r_Dark_Web_store","path":"rooms/r_Dark_Web_store/r_Dark_Web_store.yy",},"order":1,},
     {"id":{"name":"ts_wood","path":"tilesets/ts_wood/ts_wood.yy",},"order":0,},
   ],
   "Options": [
@@ -107,7 +107,7 @@
     {"roomId":{"name":"r_debug","path":"rooms/r_debug/r_debug.yy",},},
     {"roomId":{"name":"r_zone1","path":"rooms/r_zone1/r_zone1.yy",},},
     {"roomId":{"name":"r_battle","path":"rooms/r_battle/r_battle.yy",},},
-    {"roomId":{"name":"r_Dark_Web_store","path":"rooms/r_Dark_Web_store/r_Dark_Web_store.yy",},},
+    {"roomId":{"name":"r_Dark_Web","path":"rooms/r_Dark_Web/r_Dark_Web.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":0,},

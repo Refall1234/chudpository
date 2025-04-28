@@ -31,6 +31,7 @@
     {"name":"r_battle","order":5,"path":"rooms/r_battle/r_battle.yy",},
     {"name":"r_chudhouse2","order":1,"path":"rooms/r_chudhouse2/r_chudhouse2.yy",},
     {"name":"r_debug","order":3,"path":"rooms/r_debug/r_debug.yy",},
+    {"name":"r_Dark_Web","order":6,"path":"rooms/r_Dark_Web/r_Dark_Web.yy",},
     {"name":"r_inv","order":2,"path":"rooms/r_inv/r_inv.yy",},
     {"name":"r_zone1","order":4,"path":"rooms/r_zone1/r_zone1.yy",},
     {"name":"removeitem","order":1,"path":"scripts/removeitem/removeitem.yy",},

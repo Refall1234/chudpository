@@ -1,12 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_chudhut",
-  "spriteId": {
-    "name": "spr_hut",
-    "path": "sprites/spr_hut/spr_hut.yy",
-  },
-  "solid": true,
+  "name": "obj_next_stage",
+  "spriteId": null,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -24,7 +21,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_chud","path":"objects/obj_chud/obj_chud.yy",},},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

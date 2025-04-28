@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"additem",
-  "isCompatibility":false,
-  "isDnD":true,
-  "name":"additem",
-  "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "additem",
+  "isDnD": true,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }
