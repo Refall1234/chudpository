@@ -15,4 +15,6 @@ draw_text(3040, 6, string("Caption: Health") + string(health));
 /// @DnDAction : YoYo Games.Drawing.Draw_Healthbar
 /// @DnDVersion : 1
 /// @DnDHash : 15EE6AAB
-draw_healthbar(0, 0, 0, 0, 100, $FFFFFFFF & $FFFFFF, $FFFFFF & $FFFFFF, $FFFFFF & $FFFFFF, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
+/// @DnDArgument : "backcol" "$FF000000"
+/// @DnDArgument : "barcol" "$F5343434"
+draw_healthbar(0, 0, 0, 0, 100, $FF000000 & $FFFFFF, $FFFFFF & $FFFFFF, $FFFFFF & $FFFFFF, 0, (($FF000000>>24) != 0), (($F5343434>>24) != 0));
