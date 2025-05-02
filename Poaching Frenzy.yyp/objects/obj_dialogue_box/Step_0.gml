@@ -2,7 +2,9 @@
 /// @DnDVersion : 1
 /// @DnDHash : 3E1F2220
 /// @DnDArgument : "var" "global.tutorial"
-if(global.tutorial == 0){	/// @DnDAction : YoYo Games.Common.Execute_Code
+if(global.tutorial == 0)
+{
+	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 451450E7
 	/// @DnDParent : 3E1F2220
@@ -23,14 +25,17 @@ if(global.tutorial == 0){	/// @DnDAction : YoYo Games.Common.Execute_Code
 			global.meetChudette = 0;
 	        
 	    }
-	}}
+	}
+}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 7F38B8A4
 /// @DnDArgument : "var" "global.meetChudette"
 /// @DnDArgument : "value" "1"
-if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
+if(global.meetChudette == 1)
+{
+	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 5ACAC470
 	/// @DnDParent : 7F38B8A4
@@ -46,14 +51,18 @@ if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	        current_line = 0;
 	        global.meetChudette = 0;
 	    }
-	}}
+	}
+}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
 /// @DnDHash : 2DBAC5F3
-else{	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+else
+{
+	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 	/// @DnDVersion : 1
 	/// @DnDHash : 54522CB4
 	/// @DnDParent : 2DBAC5F3
 	/// @DnDArgument : "msg" ""not implemented yet""
-	show_debug_message(string("not implemented yet"));}
+	show_debug_message(string("not implemented yet"));
+}

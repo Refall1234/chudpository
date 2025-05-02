@@ -2,7 +2,9 @@
 /// @DnDVersion : 1
 /// @DnDHash : 28FF683C
 /// @DnDArgument : "var" "global.tutorial"
-if(global.tutorial == 0){	/// @DnDAction : YoYo Games.Drawing.Draw_Self
+if(global.tutorial == 0)
+{
+	/// @DnDAction : YoYo Games.Drawing.Draw_Self
 	/// @DnDVersion : 1
 	/// @DnDHash : 38C673BA
 	/// @DnDParent : 28FF683C
@@ -32,14 +34,17 @@ if(global.tutorial == 0){	/// @DnDAction : YoYo Games.Drawing.Draw_Self
 	
 	if (current_line < array_length(tutorial_d)) {
 	    draw_text(_x, _y, tutorial_d[current_line]);
-	    }}
+	    }
+}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 5836C7B6
 /// @DnDArgument : "var" "global.meetChudette"
 /// @DnDArgument : "value" "1"
-if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
+if(global.meetChudette == 1)
+{
+	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 488EC7B7
 	/// @DnDParent : 5836C7B6
@@ -84,4 +89,5 @@ if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	// draws the next line of dialogue
 	if (current_line < array_length(chudette_d)) {
 	    draw_text(_x, _y, chudette_d[current_line]);
-	    }}
+	    }
+}
