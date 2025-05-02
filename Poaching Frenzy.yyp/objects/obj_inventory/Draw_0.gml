@@ -3,9 +3,7 @@
 /// @DnDHash : 20294316
 /// @DnDArgument : "var" "room"
 /// @DnDArgument : "value" "r_inv"
-if(room == r_inv)
-{
-	/// @DnDAction : YoYo Games.Common.Execute_Code
+if(room == r_inv){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 26315807
 	/// @DnDParent : 20294316
@@ -31,5 +29,4 @@ if(room == r_inv)
 	// Handle empty inventory
 	if (ds_list_size(inventory) < 1) {
 	    draw_text(_x, _y, "Nothing!");
-	}
-}
+	}}
