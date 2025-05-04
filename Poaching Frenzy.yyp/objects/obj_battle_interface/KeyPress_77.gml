@@ -23,13 +23,16 @@ enemHealth += -meleeDamage;
 /// @DnDVersion : 1
 /// @DnDHash : 14452FC7
 /// @DnDArgument : "var" "meleeDamage"
-if(meleeDamage == 0){	/// @DnDAction : YoYo Games.Common.Variable
+if(meleeDamage == 0)
+{
+	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 5146179D
 	/// @DnDParent : 14452FC7
 	/// @DnDArgument : "expr" ""Missed!""
 	/// @DnDArgument : "var" "meleeDamage"
-	meleeDamage = "Missed!";}
+	meleeDamage = "Missed!";
+}
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

@@ -37,7 +37,9 @@ draw_healthbar(850, 250, 1200, 270, enemHealth, $FFAAACFF & $FFFFFF, $FF000000 &
 /// @DnDHash : 3CD986E8
 /// @DnDArgument : "var" "newAttack"
 /// @DnDArgument : "value" "1"
-if(newAttack == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
+if(newAttack == 1)
+{
+	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 586FDF4D
 	/// @DnDParent : 3CD986E8
@@ -49,4 +51,5 @@ if(newAttack == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	draw_set_color(c_maroon);
 	draw_set_halign(fa_center); 
 	draw_set_valign(fa_middle);
-	draw_text(meleeDamage_drawX, meleeDamage_drawY, string(meleeDamage));}
+	draw_text(meleeDamage_drawX, meleeDamage_drawY, string(meleeDamage));
+}

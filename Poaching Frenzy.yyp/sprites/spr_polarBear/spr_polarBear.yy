@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_polarBear",
   "bboxMode":0,
-  "bbox_bottom":767,
+  "bbox_bottom":52,
   "bbox_left":0,
-  "bbox_right":319,
+  "bbox_right":63,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,21 +12,25 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7ddad863-3bff-49eb-80f0-a578538a5303","name":"7ddad863-3bff-49eb-80f0-a578538a5303","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3ee2fdc3-479b-4aa4-9b6c-34e9d54edfb2","name":"3ee2fdc3-479b-4aa4-9b6c-34e9d54edfb2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"09b51629-8d4a-4af4-9a84-938459908fb7","name":"09b51629-8d4a-4af4-9a84-938459908fb7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"5d4b8d9f-c190-4c2c-bf26-c19b5a1b9333","name":"5d4b8d9f-c190-4c2c-bf26-c19b5a1b9333","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6dda7b56-08ea-4d05-99ff-44e2c3cabcc9","name":"6dda7b56-08ea-4d05-99ff-44e2c3cabcc9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d9e5f647-b951-4197-b1db-369027fe7460","name":"d9e5f647-b951-4197-b1db-369027fe7460","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":768,
+  "height":53,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"5d0e2662-fba5-4937-a110-e2d4a79f85ce","blendMode":0,"displayName":"default","isLocked":false,"name":"5d0e2662-fba5-4937-a110-e2d4a79f85ce","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6fc0e0f1-b923-4ad9-aa90-34ee92ab602f","blendMode":0,"displayName":"default","isLocked":false,"name":"6fc0e0f1-b923-4ad9-aa90-34ee92ab602f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_polarBear",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"raw animals",
-    "path":"folders/Sprites/raw animals.yy",
+    "name":"Cooked Animals",
+    "path":"folders/Sprites/Cooked Animals.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -49,7 +53,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":5.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -63,12 +67,28 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":53.0,
+    "seqWidth":64.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7ddad863-3bff-49eb-80f0-a578538a5303","path":"sprites/spr_polarBear/spr_polarBear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d6aa5b5e-318d-4a84-8601-9b28eb6e5042","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3ee2fdc3-479b-4aa4-9b6c-34e9d54edfb2","path":"sprites/spr_polarBear/spr_polarBear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d7f8c359-9783-491f-920f-6b2ef6e3e4e7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"09b51629-8d4a-4af4-9a84-938459908fb7","path":"sprites/spr_polarBear/spr_polarBear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c53dfece-306d-4c6a-8ca6-448e4bc3a78c","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5d4b8d9f-c190-4c2c-bf26-c19b5a1b9333","path":"sprites/spr_polarBear/spr_polarBear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9c62db4a-4dc1-45cf-85b5-4d585d32bf6e","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6dda7b56-08ea-4d05-99ff-44e2c3cabcc9","path":"sprites/spr_polarBear/spr_polarBear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c827ec7d-b262-4121-b001-dc721eeac8ac","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9e5f647-b951-4197-b1db-369027fe7460","path":"sprites/spr_polarBear/spr_polarBear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4ee64ad1-ada5-4071-8be2-80d0c6f9f000","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -84,5 +104,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":320,
+  "width":64,
 }
