@@ -4,19 +4,13 @@
 /// @DnDInput : 3
 /// @DnDArgument : "value" "100"
 /// @DnDArgument : "value_1" "1"
-/// @DnDArgument : "value_2" "100"
+/// @DnDArgument : "value_2" "global.chudHealth"
 /// @DnDArgument : "var" "max_health"
 /// @DnDArgument : "var_1" "stage"
 /// @DnDArgument : "var_2" "health"
 global.max_health = 100;
 global.stage = 1;
-global.health = 100;
-
-/// @DnDAction : YoYo Games.Instance Variables.Get_Health
-/// @DnDVersion : 1
-/// @DnDHash : 1352CE18
-/// @DnDArgument : "var" "global.chudHealth"
-if(!variable_instance_exists(id, "__dnd_health")) __dnd_health = 0;global.chudHealth = __dnd_health;
+global.health = global.chudHealth;
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
