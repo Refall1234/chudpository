@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"spr_firegunBar",
   "bboxMode":0,
   "bbox_bottom":97,
@@ -63,6 +63,8 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":122.0,
+    "seqWidth":408.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,

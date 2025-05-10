@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"spr_metal",
   "bboxMode":0,
   "bbox_bottom":767,

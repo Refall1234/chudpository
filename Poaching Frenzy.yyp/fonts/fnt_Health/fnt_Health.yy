@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_Health",
+  "%Name":"fnt_health",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":51,
@@ -243,7 +243,7 @@
   "last":0,
   "lineHeight":64,
   "maintainGms1Font":false,
-  "name":"fnt_Health",
+  "name":"fnt_health",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

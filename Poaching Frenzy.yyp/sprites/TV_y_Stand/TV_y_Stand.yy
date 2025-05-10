@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"910dc4ec-607c-49bf-9f64-ef03540c087a","name":"910dc4ec-607c-49bf-9f64-ef03540c087a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e2267dc6-8457-4139-a87c-cd0dccccfe40","name":"e2267dc6-8457-4139-a87c-cd0dccccfe40","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":40,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"734d920b-6cee-4cde-9094-d59119b2d557","blendMode":0,"displayName":"default","isLocked":false,"name":"734d920b-6cee-4cde-9094-d59119b2d557","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e147b763-85e8-4370-9c15-2e8df9c87bea","blendMode":0,"displayName":"default","isLocked":false,"name":"e147b763-85e8-4370-9c15-2e8df9c87bea","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"TV_y_Stand",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"House Furniture",
-    "path":"folders/Sprites/House Furniture.yy",
+    "name":"Furniture",
+    "path":"folders/Sprites/Furniture.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"910dc4ec-607c-49bf-9f64-ef03540c087a","path":"sprites/TV_y_Stand/TV_y_Stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e47003ab-4034-4476-9ba6-7e61564b7e2d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e2267dc6-8457-4139-a87c-cd0dccccfe40","path":"sprites/TV_y_Stand/TV_y_Stand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9119b7c5-158b-4666-ade5-76a8a6fcaa38","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -1,5 +1,5 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v1",
   "%Name":"snd_dagger",
   "audioGroupId":{
     "name":"audiogroup_default",
@@ -9,7 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.044898,
+  "duration":1.0,
+  "exportDir":"",
   "name":"snd_dagger",
   "parent":{
     "name":"Sounds",

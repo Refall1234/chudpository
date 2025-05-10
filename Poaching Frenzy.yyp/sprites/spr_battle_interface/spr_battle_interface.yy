@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"spr_battle_interface",
   "bboxMode":0,
   "bbox_bottom":229,
@@ -63,6 +63,8 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":230.0,
+    "seqWidth":1325.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,

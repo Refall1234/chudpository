@@ -1,16 +1,13 @@
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 54466947
-/// @DnDInput : 3
+/// @DnDInput : 2
 /// @DnDArgument : "value" "100"
 /// @DnDArgument : "value_1" "1"
-/// @DnDArgument : "value_2" "100"
 /// @DnDArgument : "var" "max_health"
 /// @DnDArgument : "var_1" "stage"
-/// @DnDArgument : "var_2" "health"
 global.max_health = 100;
 global.stage = 1;
-global.health = 100;
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -76,3 +73,10 @@ if(global.stage == 6){	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDArgument : "value" "225"
 	/// @DnDArgument : "var" "global.max_health"
 	global.max_health = 225;}
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 36326C6B
+/// @DnDArgument : "code" "//converts the health to a percent when the max health is above 100$(13_10)percent = (global.chudHealth/global.max_health)*100"
+//converts the health to a percent when the max health is above 100
+percent = (global.chudHealth/global.max_health)*100

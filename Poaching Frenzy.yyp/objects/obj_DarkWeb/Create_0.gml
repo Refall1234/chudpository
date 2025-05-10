@@ -1,80 +1,60 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 32FEE674
-/// @DnDArgument : "code" "// Stores items as structs$(13_10)// idea provided by AI$(13_10)storeItems = ds_list_create();$(13_10)$(13_10)// Add animal names to the list$(13_10)ds_list_add(storeItems, "Bornean Bearded Pig");$(13_10)ds_list_add(storeItems, "Ethiopian Wolves");$(13_10)ds_list_add(storeItems, "Guinea Sheep");$(13_10)ds_list_add(storeItems, "Bison");$(13_10)ds_list_add(storeItems, "Wild Dogs");$(13_10)ds_list_add(storeItems, "Lions");$(13_10)ds_list_add(storeItems, "Buffalos");$(13_10)ds_list_add(storeItems, "Gazelles");$(13_10)ds_list_add(storeItems, "Deathstalker Scorpions");$(13_10)ds_list_add(storeItems, "Rüppell's Fox");$(13_10)ds_list_add(storeItems, "Peccary");$(13_10)ds_list_add(storeItems, "Jackrabbit");$(13_10)ds_list_add(storeItems, "American Alligator");$(13_10)ds_list_add(storeItems, "Snapping Turtle");$(13_10)ds_list_add(storeItems, "Nutria");$(13_10)ds_list_add(storeItems, "Swamp Fish");$(13_10)ds_list_add(storeItems, "Jaguar");$(13_10)ds_list_add(storeItems, "Anaconda");$(13_10)ds_list_add(storeItems, "Capybara");$(13_10)ds_list_add(storeItems, "Okapi");$(13_10)ds_list_add(storeItems, "Polar Bear");$(13_10)ds_list_add(storeItems, "Arctic Wolf");$(13_10)ds_list_add(storeItems, "Reindeer");$(13_10)ds_list_add(storeItems, "Harp Seal");$(13_10)$(13_10)$(13_10)$(13_10)// In the Draw Event$(13_10)$(13_10)// Starting positions$(13_10)var startX = 50;$(13_10)var startY = 50;$(13_10)var spacingY = 20;  // Space between each animal vertically$(13_10)var spacingX = 300; // Space between the two columns$(13_10)$(13_10)var halfList = ceil(ds_list_size(storeItems) / 2); // Halfway point$(13_10)$(13_10)for (var i = 0; i < ds_list_size(storeItems); i++) {$(13_10)    var column = 0;$(13_10)    var row = i;$(13_10)    $(13_10)    if (i >= halfList) {$(13_10)        column = 1;$(13_10)        row = i - halfList;$(13_10)    }$(13_10)    $(13_10)    var drawX = startX + (column * spacingX);$(13_10)    var drawY = startY + (row * spacingY);$(13_10)    $(13_10)    var animalName = storeItems[| i];$(13_10)    draw_text(drawX, drawY, animalName);$(13_10)}$(13_10)$(13_10)$(13_10)///startX and startY are where the first name will appear.$(13_10)$(13_10)//spacing controls the vertical space between each animal.$(13_10)$(13_10)//ds_list_size(storeItems) gets how many animals are in the list.$(13_10)$(13_10)//storeItems[| i] reads the i-th animal name.$(13_10)$(13_10)//draw_text(x, y, text) draws each name on the screen.$(13_10)$(13_10)///It splits the list in half (halfList).$(13_10)$(13_10)//The first half draws on the left column.$(13_10)$(13_10)//The second half moves to the right column.$(13_10)$(13_10)//spacingX controls how far apart the columns are.$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
+/// @DnDArgument : "code" "// Stores items as structs$(13_10)// idea provided by AI$(13_10)$(13_10)$(13_10)// Add animal names to the list$(13_10)$(13_10)$(13_10)// Shop variables in create event$(13_10)shopOpen = false$(13_10)global.shop = false$(13_10)$(13_10)selected = 0$(13_10)$(13_10)$(13_10)//I know the items have different prices than original$(13_10)//chart. I made some of the numbers references to hate symbols$(13_10)//https://www.adl.org/resources/hate-symbols/search $(13_10)items = [$(13_10)    ["bornean_bearded_pig", 38],    $(13_10)    ["ethiopian_wolf", 148],$(13_10)    ["guinea_sheep", 1],$(13_10)	["bison", 14],    $(13_10)    ["african_wild_dog", 128],$(13_10)    ["lion", 211],$(13_10)	["buffalo",14],$(13_10)	["gazelle",5],$(13_10)	["deathstalker_scorpion",88],$(13_10)	["desert_fox",50],$(13_10)	["peccary",109],$(13_10)	["jackrabbit",23],$(13_10)	["american_alligator",175],$(13_10)	["snapping_turtle",111],$(13_10)	["nutria",5],$(13_10)	["swamp_fish",5],$(13_10)	["jaguar",311],$(13_10)	["anaconda",263],$(13_10)	["capybara",5],$(13_10)	["okapi",5],$(13_10)	["polar_bear",1488], //is 1488 too much? I couldn't help myself.$(13_10)	["arctic_wolf",318],$(13_10)	["reindeer",75],$(13_10)	["harp_seal",110],$(13_10)];$(13_10)$(13_10)//length of items$(13_10)itemCount = array_length(items);$(13_10)$(13_10)// GUI properties$(13_10)display_set_gui_size(3840,3840)$(13_10)guiWidth = display_get_gui_width();$(13_10)guiHeight = display_get_gui_height();$(13_10)$(13_10)menuWidth = guiWidth * 0.3;$(13_10)menuMargin = guiWidth * 0.1;$(13_10)$(13_10)previewWidth = (guiWidth - (menuWidth + menuMargin));$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
 // Stores items as structs
 // idea provided by AI
-storeItems = ds_list_create();
+
 
 // Add animal names to the list
-ds_list_add(storeItems, "Bornean Bearded Pig");
-ds_list_add(storeItems, "Ethiopian Wolves");
-ds_list_add(storeItems, "Guinea Sheep");
-ds_list_add(storeItems, "Bison");
-ds_list_add(storeItems, "Wild Dogs");
-ds_list_add(storeItems, "Lions");
-ds_list_add(storeItems, "Buffalos");
-ds_list_add(storeItems, "Gazelles");
-ds_list_add(storeItems, "Deathstalker Scorpions");
-ds_list_add(storeItems, "Rüppell's Fox");
-ds_list_add(storeItems, "Peccary");
-ds_list_add(storeItems, "Jackrabbit");
-ds_list_add(storeItems, "American Alligator");
-ds_list_add(storeItems, "Snapping Turtle");
-ds_list_add(storeItems, "Nutria");
-ds_list_add(storeItems, "Swamp Fish");
-ds_list_add(storeItems, "Jaguar");
-ds_list_add(storeItems, "Anaconda");
-ds_list_add(storeItems, "Capybara");
-ds_list_add(storeItems, "Okapi");
-ds_list_add(storeItems, "Polar Bear");
-ds_list_add(storeItems, "Arctic Wolf");
-ds_list_add(storeItems, "Reindeer");
-ds_list_add(storeItems, "Harp Seal");
 
 
+// Shop variables in create event
+shopOpen = false
+global.shop = false
 
-// In the Draw Event
-
-// Starting positions
-var startX = 50;
-var startY = 50;
-var spacingY = 20;  // Space between each animal vertically
-var spacingX = 300; // Space between the two columns
-
-var halfList = ceil(ds_list_size(storeItems) / 2); // Halfway point
-
-for (var i = 0; i < ds_list_size(storeItems); i++) {
-    var column = 0;
-    var row = i;
-    
-    if (i >= halfList) {
-        column = 1;
-        row = i - halfList;
-    }
-    
-    var drawX = startX + (column * spacingX);
-    var drawY = startY + (row * spacingY);
-    
-    var animalName = storeItems[| i];
-    draw_text(drawX, drawY, animalName);
-}
+selected = 0
 
 
-///startX and startY are where the first name will appear.
+//I know the items have different prices than original
+//chart. I made some of the numbers references to hate symbols
+//https://www.adl.org/resources/hate-symbols/search 
+items = [
+    ["bornean_bearded_pig", 38],    
+    ["ethiopian_wolf", 148],
+    ["guinea_sheep", 1],
+	["bison", 14],    
+    ["african_wild_dog", 128],
+    ["lion", 211],
+	["buffalo",14],
+	["gazelle",5],
+	["deathstalker_scorpion",88],
+	["desert_fox",50],
+	["peccary",109],
+	["jackrabbit",23],
+	["american_alligator",175],
+	["snapping_turtle",111],
+	["nutria",5],
+	["swamp_fish",5],
+	["jaguar",311],
+	["anaconda",263],
+	["capybara",5],
+	["okapi",5],
+	["polar_bear",1488], //is 1488 too much? I couldn't help myself.
+	["arctic_wolf",318],
+	["reindeer",75],
+	["harp_seal",110],
+];
 
-//spacing controls the vertical space between each animal.
+//length of items
+itemCount = array_length(items);
 
-//ds_list_size(storeItems) gets how many animals are in the list.
+// GUI properties
+display_set_gui_size(3840,3840)
+guiWidth = display_get_gui_width();
+guiHeight = display_get_gui_height();
 
-//storeItems[| i] reads the i-th animal name.
+menuWidth = guiWidth * 0.3;
+menuMargin = guiWidth * 0.1;
 
-//draw_text(x, y, text) draws each name on the screen.
-
-///It splits the list in half (halfList).
-
-//The first half draws on the left column.
-
-//The second half moves to the right column.
-
-//spacingX controls how far apart the columns are.
+previewWidth = (guiWidth - (menuWidth + menuMargin));

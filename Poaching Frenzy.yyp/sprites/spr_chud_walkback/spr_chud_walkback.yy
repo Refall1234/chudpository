@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"spr_chud_walkback",
   "bboxMode":0,
   "bbox_bottom":127,

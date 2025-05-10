@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"spr_chudette_dialogue",
   "bboxMode":0,
   "bbox_bottom":1023,
